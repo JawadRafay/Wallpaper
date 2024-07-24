@@ -14,24 +14,27 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class Home extends AppCompatActivity {
+public class Profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.profile);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.profile);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
                 if (itemId == R.id.home) {
+                    Intent intent1 = new Intent(getApplicationContext(), Home.class);
+                    startActivity(intent1);
+                    overridePendingTransition(0, 0);
                     return true;
                 } else if (itemId == R.id.explore) {
-                    Intent intent1 = new Intent(getApplicationContext(), Explore.class);
-                    startActivity(intent1);
+                    Intent intent2 = new Intent(getApplicationContext(), Explore.class);
+                    startActivity(intent2);
                     overridePendingTransition(0, 0);
                     return true;
                 } else if (itemId == R.id.plus) {
@@ -40,9 +43,6 @@ public class Home extends AppCompatActivity {
                     overridePendingTransition(0, 0);
                     return true;
                 } else if (itemId == R.id.profile) {
-                    Intent intent2 = new Intent(getApplicationContext(), Profile.class);
-                    startActivity(intent2);
-                    overridePendingTransition(0, 0);
                     return true;
                 }
 
