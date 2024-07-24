@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple">#622CB8</color>
+
+    <!--My colors-->
+    <color name="Primary_background">#111111</color>
 </resources>
