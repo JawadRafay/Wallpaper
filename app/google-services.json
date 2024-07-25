@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454900374925",
+    "project_id": "wallpaper-59db9",
+    "storage_bucket": "wallpaper-59db9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454900374925:android:b2dc4b29b916598e91b1c4",
+        "android_client_info": {
+          "package_name": "com.abhi.wallpaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6xPHUJGuyh6AdXJxGUzcLHPr6gEiKO4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
