@@ -42,4 +42,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    //Google cloud auth
+    implementation(libs.play.services.auth)
 }
